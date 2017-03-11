@@ -1,0 +1,29 @@
+{
+  "name": "teste-web-cache",
+  "version": "1.0.0",
+  "description": "application to test web caching of responses",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/phramos/teste-web-cache.git"
+  },
+  "keywords": [
+    "web",
+    "cache",
+    "test",
+    "cache",
+    "proxy"
+  ],
+  "author": "Pedro Henrique Ramos Souza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phramos/teste-web-cache/issues"
+  },
+  "homepage": "https://github.com/phramos/teste-web-cache#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
