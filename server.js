@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var port = process.env.PORT || 8000;
+var port = process.env.PORT || 3000;
 
 app.get('/', function (req, res) {
     res.setHeader('Cache-Control', 'public, max-age=30');
@@ -42,6 +42,6 @@ app.get('/cache1Year', function (req, res) {
     });
 });
 
-app.listen(3000, function () {
+app.listen(port, function () {
     console.log(`Proxy Cache application is running on port: ${port}`);
 });
