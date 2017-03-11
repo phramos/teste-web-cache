@@ -2,6 +2,14 @@ var express = require('express');
 var app = express();
 var port = 3000;
 
+app.get('/', function (req, res) {
+    res.setHeader('Cache-Control', 'public, max-age=30');
+    res.json({
+        'Cache-Control': 'public, max-age=30',
+        'Message': 'This request will be cached for 30 seconds'
+    });
+});
+
 app.get('/cache30Seconds', function (req, res) {
     res.setHeader('Cache-Control', 'public, max-age=30');
     res.json({
