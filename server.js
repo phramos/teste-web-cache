@@ -28,6 +28,11 @@ app.get('/cache1Week', function (req, res) {
     res.render('pages/cache1Week');
 });
 
+app.get('/cache4Weeks', function (req, res) {
+    res.setHeader('Cache-Control', 'public, max-age=2419200');
+    res.render('pages/cache4Weeks');
+});
+
 app.get('/cache1Year', function (req, res) {
     res.setHeader('Cache-Control', 'public, max-age=31557600');
     res.render('pages/cache1Year');
