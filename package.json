@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/phramos/teste-web-cache#readme",
   "dependencies": {
+    "ejs": "2.4.1",
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "nodemon": "^1.11.0",
